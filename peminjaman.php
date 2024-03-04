@@ -116,7 +116,7 @@ function getBookOptions() {
         <h2 class="mt-4 mb-4">Form Peminjaman Buku</h2>
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
             <div class="form-group">
-                <label for="userID">Pilih Username:</label>
+                <label for="userID">Username:</label>
                 <select class="form-control" id="userID" name="userID">
                     <?php echo getUserOptions(); ?>
                 </select>
