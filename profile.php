@@ -14,7 +14,7 @@ $result = $conn->query($query);
 if ($result && $result->num_rows > 0) {
     $row = $result->fetch_assoc();
 } else {
-    echo "User not found!";
+    echo "User tidak di temukan!";
     exit;
 }
 
