@@ -7,12 +7,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST['email'];
     $namaLengkap = $_POST['nama_lengkap'];
     $alamat = $_POST['alamat'];
-
     $role = 'peminjam';
-
     $sql = "INSERT INTO user (Username, Password, Email, NamaLengkap, Alamat, Role) 
             VALUES ('$username', '$password', '$email', '$namaLengkap', '$alamat', '$role')";
-
     if ($conn->query($sql) === TRUE) {
         echo "Registrasi berhasil!";
     } else {
@@ -24,14 +21,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register Perpustakaan Digital</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
-
 <body>
     <div class="container">
         <div class="row justify-content-center mt-5">
