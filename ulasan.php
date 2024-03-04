@@ -76,7 +76,7 @@ if ($role == 'administrator' || $role == 'petugas') {
                                 <td><?php echo isset($row_ulasan['rating']) ? $row_ulasan['rating'] : 'Belum ada rating'; ?></td>
                                 <?php if ($role == 'administrator' || $role == 'petugas'): ?>
                                     <td>
-                                        <a href="?delete_id=<?php echo $row_ulasan['UlasanID']; ?>" onclick="return confirm('Apakah Anda yakin ingin menghapus ulasan ini?');" class="btn btn-danger btn-sm">Hapus</a>
+                                        <a href="?delete_id=<?php echo $row_ulasan['UlasanID']; ?>" onclick="return confirm('Apakah Anda yakin ingin menghapus ulasan ini??');" class="btn btn-danger btn-sm">Hapus</a>
                                     </td>
                                 <?php endif; ?>
                             </tr>
@@ -92,7 +92,6 @@ if ($role == 'administrator' || $role == 'petugas') {
         </div>
         <a href="dashboard.php" class="btn btn-secondary">Kembali ke dashboard</a>
     </div>
-
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
