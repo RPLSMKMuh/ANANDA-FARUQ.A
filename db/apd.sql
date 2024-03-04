@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 04, 2024 at 03:02 AM
+-- Generation Time: Mar 04, 2024 at 05:19 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.1.25
 
@@ -60,7 +60,9 @@ INSERT INTO `buku` (`BukuID`, `Judul`, `Penulis`, `Penerbit`, `TahunTerbit`, `De
 (39, 'One Piece 98', 'Eiichiro Oda', 'Aufa', 20222, 'Sebuah wiracarita tentang para samurai gagah berani berencana membalaskan dendam atas kematian tuan mereka, Asano Naganori. Setelah berhasil membalas dendam dengan membunuh Kira Yoshinaka, biang keladi terbunuhnya Asano Naganori, seluruh samurai pengikut Naganori menyerahkan diri kepada otoritas dan dihukum seppuku oleh shogun yang berkuasa.', 23, 'upload/Screenshot 2024-03-01 144600.png'),
 (40, 'Blue Lock 01', 'Muneyuki Kaneshiro dan Yusuke Nomura', 'Aufa', 2023, 'Blue Lock merupakan manga bertema olahraga, tepatnya sepak bola, yang rilis pertama kali pada 1 Agustus 2018 di majalah Weekly Shonen Magazine. Mengisahkan tentang seorang laki-laki bernama Isagi Yoichi yang masuk sebuah lembaga sepakbola bernama Japan Football Union (JFU), bersama 299 peserta lainnya untuk mengembangkan bakat dan ego mereka demi menjadi seorang striker terbaik yang selalu haus akan kemenangan.', 23, 'upload/Screenshot 2024-03-01 144645.png'),
 (41, 'Tokyo Revengers 01', 'Ken Wakui', 'Aufa', 2023, 'Mengisahkan perjalanan waktu Takemichi dalam merubah nasibnya dan orang yang ia cintai, Hinata. Satu-satunya gadis yang pernah dipacari dalam hidupnya saat mereka SMP, namun dibunuh oleh Geng Tokyo Manji, aliansi berandalan yang bahkan tidak bisa ditangani polisi.', 23, 'upload/Screenshot 2024-03-01 144731.png'),
-(42, 'Jujutsu Kaisen 05', 'Gege Akutami', 'Aufa', 2021, 'Todo yang gemar berkelahi segera menyerang pihak Tokyo. Saat Todo dan Itadori saling berhadapan, anak-anak Kyoto yang lain ikut mengepung Itadori dengan niat untuk membunuhnya! Tapi jangan tegang dulu Grameds, selain penuh aksi kamu juga akan dibuat terbahak oleh komik satu ini.', 23, 'upload/Screenshot 2024-03-01 161015.png');
+(42, 'Jujutsu Kaisen 05', 'Gege Akutami', 'Aufa', 2021, 'Todo yang gemar berkelahi segera menyerang pihak Tokyo. Saat Todo dan Itadori saling berhadapan, anak-anak Kyoto yang lain ikut mengepung Itadori dengan niat untuk membunuhnya! Tapi jangan tegang dulu Grameds, selain penuh aksi kamu juga akan dibuat terbahak oleh komik satu ini.', 23, 'upload/Screenshot 2024-03-01 161015.png'),
+(43, 'Detektif Conan 100', 'Aoyama Gosho', 'Aufa', 1990, 'Organisasi baju hitamlah yang berada di balik penemuan secara beruntun mayat tanpa identitas. Musuh kali ini terdiri dari Gin, Vodka, Chianti, Korn, Vermouth, Kir, dan Rum. Kecerdasan dan kecerdikan yang tiada duanya akhirnya membawa secercah sinar terang berupa kode yang mudah terpecahkan.', 23, 'upload/Screenshot 2024-03-04 110803.png'),
+(44, 'SPY X Family 01', 'Endo Tetsuya', 'Aufa', 2019, 'Bercerita tentang keluarga Forger yang bukanlah keluarga biasa, dengan rahasia yang mereka sembunyikan. Sang ayah adalah seorang agen rahasia terhebat dan sang ibu adalah seorang pembunuh. Sang anak pun memiliki kemampuan untuk membaca pikiran. Meski mereka hanyalah keluarga palsu yang saling menyimpan rahasia satu sama lain, ternyata kehangatan juga muncul di sana.', 23, 'upload/Screenshot 2024-03-04 110916.png');
 
 -- --------------------------------------------------------
 
@@ -318,7 +320,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `buku`
 --
 ALTER TABLE `buku`
-  MODIFY `BukuID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
+  MODIFY `BukuID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
 
 --
 -- AUTO_INCREMENT for table `kategoribuku`
