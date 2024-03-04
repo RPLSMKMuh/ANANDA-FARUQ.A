@@ -3,6 +3,7 @@ include 'koneksi.php';
 
 $sql_kategori = "SELECT * FROM kategoribuku";
 $result_kategori = $conn->query($sql_kategori);
+
 $kategoribuku_options = '';
 if ($result_kategori->num_rows > 0) {
     while ($row_kategori = $result_kategori->fetch_assoc()) {
@@ -61,9 +62,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['update_buku'])) {
 
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['hapus_buku'])) {
     $buku_id = $_POST['buku_id'];
-
     $sql_delete = "DELETE FROM buku WHERE BukuID='$buku_id'";
-
     if ($conn->query($sql_delete) === TRUE) {
         $message = '<div class="alert alert-success" role="alert">Data buku berhasil dihapus!</div>';
     } else {
@@ -74,7 +73,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['hapus_buku'])) {
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -97,7 +95,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['hapus_buku'])) {
         }
     </script>
 </head>
-
 <body>
     <div class="container mt-5">
         <h2>Tambah Buku</h2>
@@ -136,7 +133,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['hapus_buku'])) {
             </div>
             <input type="submit" name="tambah_buku" class="btn btn-primary" value="Tambah Buku">
         </form>
-
         <h2>Daftar Buku</h2>
         <div class="table-responsive">
             <table class="table">
@@ -172,8 +168,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['hapus_buku'])) {
                             echo '</form>';
                             echo '</td>';
                             echo '</tr>';
-
-                            // Form edit untuk setiap buku
+                            // 
                             echo '<tr class="form-edit" id="form-edit-' . $row_buku['BukuID'] . '">';
                             echo '<td colspan="7">';
                             echo '<form method="post" action="' . $_SERVER['PHP_SELF'] . '" enctype="multipart/form-data">';
